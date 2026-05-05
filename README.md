@@ -10,7 +10,6 @@ LendingClub is a U.S.-based peer-to-peer lending platform that connects borrower
 
 This project analyzes the performance of LendingClub's loan portfolio between **2007 and 2018**, using approximately **1.35 million loans** (Fully Paid and Charged Off), representing nearly **$19.4 billion in funded capital**.
 
-![Funded Amount](images/Funded_Amount.png)
 
 ### Objective
 
@@ -54,6 +53,7 @@ The portfolio exhibits a **clear pattern of performance deterioration** over tim
 ![Portfolio Return](images/Portfolio_Return.jpeg)
 
 Portfolio returns improved steadily in the early years, reaching a peak of approximately **13% in 2013**. This trend reversed sharply in subsequent years, with returns declining to negative levels between 2016 and 2018.
+![Funded Amount](images/Funded_Amount.png)
 
 Lending activity expanded significantly over time, reaching a peak of approximately **$5.5B in 2015**. Following this peak, funding levels declined sharply, falling to approximately **$0.8B by 2018**.
 
@@ -129,7 +129,7 @@ All financial impact estimates are derived from **conservative scenario modeling
 | **Credit Grade Policy** | Reduce F–G originations by ~50% with partial repricing | +200 bps (covers 13–21% of real gap) | 50% of losses avoided from F–G (−$77M total) + additional yield on retained capital (~$315M) | **+$44.8M** |
 | **Underwriting Policy** | Reject high-risk loans (DTI > p75 and FICO < 680) within E–G | N/A | High-risk subset (12.2% of loans, $220M capital) with −13.75% return removed from portfolio | **+$30.35M** |
 | **Risk Pricing Model** | Increase interest rates in Grade D (partial repricing) | +87 bps (50% of gap: 174 bps) | Yield–loss gap in Grade D (+174 bps) applied to total Grade D capital ($2.6B) | **+$22.7M** |
-| | | | **Total Estimated Value Recovery** | **+$204.75M** |
+
 
 >  **Note**: These scenarios are **not additive**. There is overlap between segments, and each scenario isolates a specific lever independently. The estimated impacts represent either avoided losses or incremental income under simplified assumptions.
 
