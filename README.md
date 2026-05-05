@@ -47,25 +47,10 @@ The portfolio exhibits a **clear pattern of performance deterioration** over tim
 
 ---
 
-## Dataset
-
-| Attribute | Value |
-|-----------|-------|
-| Source | LendingClub Public Loan Data |
-| Period | 2007 – 2018 |
-| Loan Status | Fully Paid & Charged Off |
-| Total Loans | ~1,350,000 |
-| Total Funded Capital | ~$19.4 Billion |
-| Net Returns | ~$498 Million |
-| Weighted Return | 2.57% |
-
----
-
-
 ## 1. Portfolio Evolution Over Time
 
-![alt text](<lending club dataset complete /accepted_2007_to_2018q4.csv/images/Portfolio_Return.jpeg>)
-![alt text](<lending club dataset complete /accepted_2007_to_2018q4.csv/images/Funded_Amount.png>)
+![Portfolio Return](images/Portfolio_Return.jpeg)
+![Funded Amount](images/Funded_Amount.png)
 
 Portfolio returns improved steadily in the early years, reaching a peak of approximately **13% in 2013**. This trend reversed sharply in subsequent years, with returns declining to negative levels between 2016 and 2018.
 
@@ -78,9 +63,8 @@ Lending activity expanded significantly over time, reaching a peak of approximat
 ---
 
 ## 2. Credit Risk Segmentation — Performance by Grade
-
-![Portfolio Return](images/Portfolio_Return.jpeg)
-![Funded Amount](images/Funded_Amount.png)
+![alt text](images/Return_by_Grade.png)
+![alt text](images/Return_by_grade_year.png)
 
 Portfolio performance varies significantly across credit grades:
 
