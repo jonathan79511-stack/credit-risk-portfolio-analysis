@@ -10,6 +10,8 @@ LendingClub is a U.S.-based peer-to-peer lending platform that connects borrower
 
 This project analyzes the performance of LendingClub's loan portfolio between **2007 and 2018**, using approximately **1.35 million loans** (Fully Paid and Charged Off), representing nearly **$19.4 billion in funded capital**.
 
+![Funded Amount](images/Funded_Amount.png)
+
 ### Objective
 
 The primary objective is to:
@@ -50,7 +52,6 @@ The portfolio exhibits a **clear pattern of performance deterioration** over tim
 ## 1. Portfolio Evolution Over Time
 
 ![Portfolio Return](images/Portfolio_Return.jpeg)
-![Funded Amount](images/Funded_Amount.png)
 
 Portfolio returns improved steadily in the early years, reaching a peak of approximately **13% in 2013**. This trend reversed sharply in subsequent years, with returns declining to negative levels between 2016 and 2018.
 
@@ -64,13 +65,14 @@ Lending activity expanded significantly over time, reaching a peak of approximat
 
 ## 2. Credit Risk Segmentation — Performance by Grade
 ![alt text](images/Return_by_Grade.png)
-![alt text](images/Return_by_grade_year.png)
 
 Portfolio performance varies significantly across credit grades:
 
 - **Grades A–B**: Stable and positive returns (~5%), indicating effective risk pricing
 - **Grade C–D**: Marginal profitability, showing early signs of stress
 - **Grades E–G**: Negative returns, indicating that elevated risk levels are not adequately compensated
+
+![alt text](images/Return_by_grade_year.png)
 
 The heatmap reveals that from **2015 onward**, returns decline across all grades simultaneously. By 2018, all credit grades generate negative returns, with the worst-performing segments reaching losses of approximately **−27.6%**.
 
