@@ -45,6 +45,6 @@ if missing_cols:
     print(f"Warning: missing columns detected -> {missing_cols}")
 
 # Persist cleaned dataset for downstream processing
-df.to_csv("loans_extracted.csv", index=False)
+df.to_csv("data/processed/loans_extracted.csv", index=False)
 
-print("Output saved: loans_extracted.csv")
+print("Output saved: data/processed/loans_extracted.csv")
