@@ -2,6 +2,31 @@
 
 > **Structural Deterioration Driven by Mispriced Risk, Duration Exposure, and Inefficient Capital Allocation**
 
+![Loans](https://img.shields.io/badge/Loans%20Analyzed-1.35M-0f172a?style=flat-square)
+![Capital](https://img.shields.io/badge/Funded%20Capital-%2419.4B-0f172a?style=flat-square)
+![Net Returns](https://img.shields.io/badge/Net%20Returns-%24498M-16a34a?style=flat-square)
+![Weighted Return](https://img.shields.io/badge/Weighted%20Return-2.57%25-16a34a?style=flat-square)
+![Period](https://img.shields.io/badge/Period-2007–2018-6366f1?style=flat-square)
+![Peak Return](https://img.shields.io/badge/Peak%20Return-13%25%20(2013)-eab308?style=flat-square)
+![Terminal Return](https://img.shields.io/badge/Terminal%20Return--9%25%20(2018)-dc2626?style=flat-square)
+![Value at Risk](https://img.shields.io/badge/Value%20Recovery%20Potential-%24204M-0ea5e9?style=flat-square)
+
+---
+
+> [!NOTE]
+> **Key Metrics at a Glance**
+>
+> | Metric | Value |
+> |--------|-------|
+> | 📁 Total Loans Analyzed | ~1,350,000 |
+> | 💵 Total Funded Capital | ~$19.4 Billion |
+> | 📈 Net Returns Generated | ~$498 Million |
+> | 📉 Weighted Portfolio Return | 2.57% |
+> | 🏆 Peak Return Year | 2013 (~13%) |
+> | ⚠️ Terminal Return (2018) | ~−9% |
+> | 💰 Estimated Value Recovery | +$204.75M |
+> | 🕐 Analysis Period | 2007 – 2018 |
+
 ---
 
 ##  Project Overview
