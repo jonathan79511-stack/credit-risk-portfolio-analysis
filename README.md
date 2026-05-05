@@ -1,10 +1,6 @@
 #  Credit Portfolio Performance Analysis — LendingClub (2007–2018)
 
 > **Structural Deterioration Driven by Mispriced Risk, Duration Exposure, and Inefficient Capital Allocation**
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)]
-[![Pandas](https://img.shields.io/badge/Pandas-2.0+-150458?style=flat-square&logo=pandas&logoColor=white)]
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat-square&logo=jupyter&logoColor=white)]
----
 
 ##  Project Overview
 
