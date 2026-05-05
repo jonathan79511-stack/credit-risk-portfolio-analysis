@@ -4,11 +4,10 @@ import numpy as np
 print("Loading portfolio dataset...")
 
 # Load filtered portfolio
-df = pd.read_csv("loans_portfolio.csv", low_memory=False)
+df = pd.read_csv("data/processed/loans_portfolio.csv", low_memory=False)
 print(f"Rows loaded: {len(df):,}")
 
 # ── Standardize interest rate ────────────────────────────────────
-# Ensure interest rate is expressed as a decimal (e.g., 13.5% → 0.135)
 if df["int_rate"].dtype == "object":
     df["int_rate"] = (
         df["int_rate"]
@@ -20,18 +19,12 @@ elif df["int_rate"].max() > 1:
     df["int_rate"] = df["int_rate"] / 100
 
 # ── Default flag ─────────────────────────────────────────────────
-# Binary indicator of default events
 df["default_flag"] = (df["outcome"] == "loss").astype(int)
 
 # ── Core financial metrics ───────────────────────────────────────
-
-# Exposure at default (EAD)
 df["ead"] = (df["funded_amnt"] - df["total_rec_prncp"]).clip(lower=0)
-
-# Net recoveries after fees
 df["net_recovery"] = df["recoveries"] - df["collection_recovery_fee"]
 
-# Realized loss (proxy for economic loss)
 df["real_loss"] = 0.0
 loss_mask = df["default_flag"] == 1
 
@@ -39,7 +32,6 @@ df.loc[loss_mask, "real_loss"] = (
     df.loc[loss_mask, "ead"] - df.loc[loss_mask, "net_recovery"]
 ).clip(lower=0)
 
-# Interest collected
 df["interest_collected"] = df["total_rec_int"]
 
 # ── Rate metrics ─────────────────────────────────────────────────
@@ -47,7 +39,7 @@ df["yield_rate"] = df["interest_collected"] / df["funded_amnt"]
 df["loss_rate"] = df["real_loss"] / df["funded_amnt"]
 df["return_rate"] = df["yield_rate"] - df["loss_rate"]
 
-# Loss given default (LGD)
+# ── LGD ──────────────────────────────────────────────────────────
 df["lgd_ratio"] = 0.0
 valid_mask = (df["ead"] > 0) & (df["default_flag"] == 1)
 
@@ -57,10 +49,7 @@ df.loc[valid_mask, "lgd_ratio"] = (
 
 # ── Sanity checks ────────────────────────────────────────────────
 print("\nSanity checks:")
-
-print("Negative losses:",
-      (df["real_loss"] < 0).sum())
-
+print("Negative losses:", (df["real_loss"] < 0).sum())
 print("Return consistency error:",
       ((df["yield_rate"] - df["loss_rate"]) - df["return_rate"]).abs().max())
 
@@ -164,12 +153,12 @@ pivot_return = vintage_grade.pivot(
 print(pivot_return)
 
 # ── Export outputs ───────────────────────────────────────────────
-df.to_csv("loans_metrics.csv", index=False)
-vintage.to_csv("vintage_analysis.csv", index=False)
-pivot_return.to_csv("vintage_grade_return.csv")
+df.to_csv("data/processed/loans_metrics.csv", index=False)
+vintage.to_csv("data/processed/vintage_analysis.csv", index=False)
+pivot_return.to_csv("data/processed/vintage_grade_return.csv")
 
 print("\nOutputs saved:")
-print("  loans_metrics.csv")
-print("  vintage_analysis.csv")
-print("  vintage_grade_return.csv")
+print("  data/processed/loans_metrics.csv")
+print("  data/processed/vintage_analysis.csv")
+print("  data/processed/vintage_grade_return.csv")
 print("=" * 60)

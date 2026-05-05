@@ -3,7 +3,7 @@ import pandas as pd
 print("Loading dataset for preprocessing...")
 
 # Load extracted dataset
-df = pd.read_csv("loans_extracted.csv", low_memory=False)
+df = pd.read_csv("data/processed/loans_extracted.csv", low_memory=False)
 print(f"Initial rows: {len(df):,}")
 
 # ── Remove duplicates ────────────────────────────────────────────
@@ -27,7 +27,6 @@ for col in monetary_cols:
     df[col] = df[col].fillna(0)
 
 # ── Standardize interest rate ────────────────────────────────────
-# Convert percentage string to numeric (e.g., "13.56%" → 13.56)
 df["int_rate"] = (
     df["int_rate"]
     .astype(str)
@@ -36,7 +35,6 @@ df["int_rate"] = (
 df["int_rate"] = pd.to_numeric(df["int_rate"], errors="coerce")
 
 # ── Standardize loan term ────────────────────────────────────────
-# Extract numeric term in months (e.g., "36 months" → 36)
 df["term"] = df["term"].astype(str).str.extract(r"(\d+)")
 df["term"] = pd.to_numeric(df["term"], errors="coerce")
 
@@ -58,10 +56,10 @@ df = df.dropna(subset=critical_cols)
 print(f"Rows after dropping critical nulls: {len(df):,}")
 
 # ── Save cleaned dataset ─────────────────────────────────────────
-df.to_csv("loans_cleaned.csv", index=False)
+df.to_csv("data/processed/loans_cleaned.csv", index=False)
 
 print("-" * 40)
 print("Preprocessing completed successfully")
-print(f"Output file: loans_cleaned.csv")
+print("Output file: data/processed/loans_cleaned.csv")
 print(f"Final columns: {len(df.columns)}")
 print("-" * 40)
