@@ -79,8 +79,8 @@ Lending activity expanded significantly over time, reaching a peak of approximat
 
 ## 2. Credit Risk Segmentation — Performance by Grade
 
-![alt text](<lending club dataset complete /accepted_2007_to_2018q4.csv/images/Return_by_Grade.png>)
-![alt text](<lending club dataset complete /accepted_2007_to_2018q4.csv/images/Return_by_loan_term.png>)
+![Portfolio Return](images/Portfolio_Return.jpeg)
+![Funded Amount](images/Funded_Amount.png)
 
 Portfolio performance varies significantly across credit grades:
 
