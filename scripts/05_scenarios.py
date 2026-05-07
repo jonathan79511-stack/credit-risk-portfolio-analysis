@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 print("Loading dataset...")
-df = pd.read_csv("data/processed/loans_metrics.csv", low_memory=False)
+df = pd.read_csv("loans_metrics.csv", low_memory=False)
 
 df["issue_d"] = pd.to_datetime(df["issue_d"], errors="coerce")
 df["issue_year"] = df["issue_d"].dt.year
@@ -109,6 +109,7 @@ eg = post2013[post2013["grade"].isin(["E", "F", "G"])].copy()
 dti_p75 = eg.groupby("grade")["dti"].quantile(0.75)
 fico_cutoff = 680
 
+# 🔥 FIX (sin warning)
 eg.loc[:, "dti_p75"] = eg["grade"].map(dti_p75)
 
 high_risk = eg[
@@ -148,6 +149,6 @@ results = pd.DataFrame({
     ]
 })
 
-results.to_csv("data/processed/scenario_analysis.csv", index=False)
+results.to_csv("scenario_analysis.csv", index=False)
 
-print("\nOutput saved: data/processed/scenario_analysis.csv")
+print("\nOutput saved: scenario_analysis.csv")
