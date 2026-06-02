@@ -149,54 +149,63 @@ The analysis shows that all loan purposes generate positive average returns when
 
 ---
 
-##  Financial Quantification & Recommendations
+## 6. Strategic Recommendations
 
-All financial impact estimates are derived from **conservative scenario modeling** applied to the post-2013 portfolio ($16.3B in funded capital). Each scenario isolates a single lever and calculates its impact using realized loan-level data — no external assumptions or benchmarks were used.
+The analysis identified several areas where portfolio performance could potentially be improved. Rather than estimating future financial impact through scenario modeling, the recommendations below compare current performance against internal portfolio benchmarks observed within the dataset.
 
-| Area | Action | BPS Applied | Calculation Basis | Estimated Impact |
-|------|--------|-------------|-------------------|-----------------|
-| **Duration / Term Policy** | Reduce 60-month loans in D+ to ≤25%, reallocate to 36-month | 675 bps real spread between terms | Return diff (36m: −4.74% vs 60m: −11.49%) applied to 75% of 60m post-2014 capital ($1.58B) | **+$106.9M** |
-| **Credit Grade Policy** | Reduce F–G originations by ~50% with partial repricing | +200 bps (covers 13–21% of real gap) | 50% of losses avoided from F–G (−$77M total) + additional yield on retained capital (~$315M) | **+$44.8M** |
-| **Underwriting Policy** | Reject high-risk loans (DTI > p75 and FICO < 680) within E–G | N/A | High-risk subset (12.2% of loans, $220M capital) with −13.75% return removed from portfolio | **+$30.35M** |
-| **Risk Pricing Model** | Increase interest rates in Grade D (partial repricing) | +87 bps (50% of gap: 174 bps) | Yield–loss gap in Grade D (+174 bps) applied to total Grade D capital ($2.6B) | **+$22.7M** |
+| Recommendation | Current Performance | Internal Benchmark | Performance Gap | Strategic Action |
+|----------------|-------------------:|-------------------:|----------------:|------------------|
+| **Optimize Grade D Capital Allocation** | 0.87% return | Grade C: ~2.8% return | +1.93 pp | Reduce exposure to low-return Grade D originations and prioritize capital deployment toward higher-performing segments |
+| **Review Long-Term Loan Pricing** | 60m loans: -4.6% return | 36m loans: 1.5% return | +6.1 pp | Apply additional pricing premiums or tighter approval criteria for long-duration loans |
+| **Improve Capital Allocation by Purpose** | Debt Consolidation: 2.1% return | Credit Card: 4.5% return | +2.4 pp | Evaluate whether future capital allocation can be diversified toward more efficient loan purposes |
+| **Strengthen Risk-Based Pricing** | Grades D–G generate weak or negative returns | Grades A–C maintain positive returns | Structural underperformance | Reassess pricing methodology to better align expected yield with realized credit losses |
 
+### Recommendation 1 — Optimize Grade D Capital Allocation
 
->  **Note**: These scenarios are **not additive**. There is overlap between segments, and each scenario isolates a specific lever independently. The estimated impacts represent either avoided losses or incremental income under simplified assumptions.
+Grade D represents one of the most important economic segments in the portfolio. While it generated only **0.87% average return**, more than **$3 billion** of funded capital was allocated to this grade.
 
-### Strategic Priority Order
+This finding is particularly important because portfolio profitability is influenced not only by return rates, but also by the amount of capital exposed. A small improvement in a large segment may create more value than a large improvement in a small segment.
 
-```
-1. Duration Control        → $106.9M  (highest structural impact)
-2. Grade Exposure Limits   → $44.8M   (mitigates structurally unprofitable segments)
-3. Underwriting Filters    → $30.35M  (precise risk control within segments)
-4. Yield Repricing         → $22.7M   (incremental, insufficient alone)
-```
+### Recommendation 2 — Review Long-Term Loan Pricing
 
-> The results confirm that **structural levers outperform pricing adjustments**. Portfolio performance is determined not only by how individual loans are priced, but by how risk is structured, allocated, and managed across the entire portfolio.
+The analysis shows a consistent performance gap between 36-month and 60-month loans. Although longer-term loans initially generated higher returns, their performance deteriorated significantly over time.
 
----
+By 2018, 60-month loans materially underperformed shorter-duration loans, suggesting that the additional yield charged was insufficient to compensate for the increased duration risk.
 
-##  Key Findings Summary
+### Recommendation 3 — Improve Capital Allocation by Purpose
 
-| Finding | Evidence | Impact |
-|---------|----------|--------|
-| Performance peaked in 2013 (~13%) and declined to −9% by 2018 | Historical return chart | Portfolio is structurally deteriorating |
-| All credit grades deteriorated simultaneously post-2015 | Grade × Year heatmap | Systemic, not segment-specific failure |
-| 60-month loans underperform by ~675 bps vs 36-month | Term comparison chart | Duration risk is underpriced |
-| Debt consolidation holds >60% of capital at moderate returns | Capital allocation chart | Inefficient capital deployment |
-| F–G grades generate structurally negative returns | Grade return analysis | Risk mispricing across the credit spectrum |
-| Capital is concentrated in Grades B–C while weak risk-adjusted returns emerge in D–G | Capital Exposure analysis | Economic impact depends on both return and exposure |
+Debt Consolidation accounts for more than **60% of total funded volume**, making it the dominant portfolio segment. However, it does not generate the strongest returns among available loan purposes.
+
+This suggests an opportunity to improve portfolio efficiency by reviewing how capital is distributed across lending categories.
+
+### Recommendation 4 — Strengthen Risk-Based Pricing
+
+Higher-risk grades consistently underperform lower-risk segments, despite carrying higher nominal interest rates.
+
+The evidence suggests that risk increased faster than pricing adjustments, resulting in persistent deterioration across higher-risk grades. Future pricing reviews should focus on maintaining a sustainable relationship between expected yield and observed credit losses.
 
 ---
 
-##  Limitations & Caveats
+## Key Findings Summary
 
-- Return metrics are **not time-adjusted** (no IRR calculation)
-- Scenario estimates are based on **simplified assumptions** and evaluated independently (non-additive)
-- **No behavioral effects** are modeled (e.g., changes in demand after repricing or underwriting changes)
-- Pricing scenarios assume **no volume elasticity** (interest rate increases do not reduce loan demand)
-- Underwriting analysis is limited to **DTI and FICO**, excluding other relevant risk variables
-- **Macroeconomic factors** (e.g., interest rates, economic cycles, unemployment) are not incorporated
+| Finding | Evidence | Business Implication |
+|----------|----------|----------|
+| Portfolio performance peaked at approximately **13% in 2013** and declined to nearly **−9% by 2018** | Portfolio Return Analysis | Portfolio expansion was accompanied by deteriorating credit performance and declining profitability |
+| All credit grades deteriorated simultaneously after 2015 | Grade × Year Heatmap | Performance deterioration was systemic rather than isolated to high-risk segments |
+| 60-month loans consistently underperformed shorter-duration loans in later years | Loan Term Analysis | Additional yield was insufficient to compensate for increased duration risk |
+| Debt Consolidation accounts for **>60% of funded capital** while generating only moderate returns | Capital Allocation by Purpose | Portfolio profitability is heavily influenced by a highly concentrated segment |
+| Grades E–G generate weak or negative returns despite higher interest rates | Return by Grade Analysis | Risk pricing appears insufficient in higher-risk segments |
+| Grade D holds **>$3B in funded capital** while generating only **~0.87% average return** | Capital Exposure Analysis | Large capital concentrations may create greater economic impact than the worst-performing grades |
 
 ---
 
+## Limitations & Caveats
+
+- Return metrics are **not time-adjusted** (no IRR or NPV calculation).
+- Results are based on **realized historical performance** and should not be interpreted as forecasts of future portfolio performance.
+- The analysis may be affected by **cohort maturity effects** in the most recent vintages (2017–2018), as some loans may not have reached full maturity before the end of the observation period.
+- Portfolio performance is evaluated at the loan level and does not account for investor-specific cash flow timing.
+- **Macroeconomic factors** (e.g., interest rates, unemployment, economic cycles) are not incorporated into the analysis.
+- The study focuses on identifying performance drivers and capital allocation inefficiencies rather than building predictive credit risk models.
+
+---
