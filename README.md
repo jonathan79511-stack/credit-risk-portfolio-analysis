@@ -21,12 +21,13 @@ At a high level, the portfolio appears profitable, generating approximately **$4
 
 ### Analytical Dimensions
 
-Rather than relying solely on aggregate metrics, this analysis decomposes performance across four critical dimensions:
+Rather than relying solely on aggregate metrics, this analysis decomposes performance across five critical dimensions:
 
 | Dimension | Breakdown | Purpose |
 |-----------|-----------|---------|
 | **Time** | Origination Year | Evaluate how portfolio quality evolved and detect structural deterioration |
 | **Credit Risk** | Borrower Grade (A–G) | Assess whether higher-risk segments are adequately compensated |
+| **Capital Exposure** | Funded Capital by Grade | Distinguish between percentage performance and economic impact |
 | **Loan Structure** | Term (36 vs 60 months) | Understand the impact of duration on performance |
 | **Capital Allocation** | Loan Purpose | Identify which segments drive overall portfolio results |
 
@@ -39,8 +40,9 @@ The portfolio exhibits a **clear pattern of performance deterioration** over tim
 - **Peak performance**: ~13% return in 2013, reflecting effective risk pricing and controlled expansion
 - **Inflection point**: From 2014 onward, returns declined sharply
 - **Terminal performance**: Negative returns between 2016–2018, reaching nearly **−9%**
-- **Capital concentration**: Debt consolidation alone represents **>60% of total funded volume**
+- **Capital allocation concentration**: Debt consolidation alone represents **>60% of total funded volume**
 - **Risk mispricing**: Higher-risk segments (Grades D–G) generate negative returns, indicating inadequate risk compensation
+- **Capital exposure concentration**: More than half of originated capital was allocated to Grades B and C, while over $3B remained exposed to low-return Grade D loans
 
 > The evidence points to a portfolio that expanded aggressively without sufficient adjustment in pricing, underwriting standards, or risk controls.
 
@@ -82,7 +84,37 @@ This synchronized decline indicates the deterioration is **structural, not segme
 
 ---
 
-## 3. Loan Structure — Term Impact (36 vs 60 months)
+## 3. Capital Exposure — Where the Money Was Actually Invested
+
+![alt text](images/Capital_by_Grade.png)
+
+While return rates provide valuable information about credit performance, they do not reveal how much capital was exposed to each segment.
+
+The portfolio was heavily concentrated in Grades B and C, each representing more than $5 billion in originated capital. By contrast, Grades F and G accounted for only a small fraction of total exposure.
+
+This distinction is important because poor performance in a small segment may have limited economic consequences, while modest underperformance in a large segment can materially affect portfolio profitability.
+
+### Key Insight
+
+> Credit risk should not be evaluated solely through percentage returns. Capital concentration determines where portfolio outcomes have the greatest economic impact.
+
+---
+
+![alt text](images/Capital_Exposure_and_Return_by_Credit_Grade.png)
+
+Combining capital allocation with realized returns reveals a different perspective on portfolio risk.
+
+Although Grade G generated the worst average return (-9.38%), it represented less than $0.2B of total funded capital. Conversely, Grade D represented more than $3 billion in originated capital while producing only a marginal return (~0.87%).
+
+This suggests that improving performance in large capital segments may create more value than focusing exclusively on the worst-performing grades.
+
+### Key Insight
+
+> The greatest economic opportunities are not necessarily located in the worst-performing segments. They are often found where large amounts of capital generate weak risk-adjusted returns.
+
+---
+
+## 4. Loan Structure — Term Impact (36 vs 60 months)
 
 ![alt text](images/Return_by_loan_term.png)
 
@@ -101,7 +133,7 @@ In the early years, 60-month loans delivered higher returns, reflecting the prem
 
 ---
 
-## 4. Capital Allocation — Performance by Loan Purpose
+## 5. Capital Allocation — Performance by Loan Purpose
 
 ![alt text](images/Capital_allocation.png)
 
@@ -153,6 +185,7 @@ All financial impact estimates are derived from **conservative scenario modeling
 | 60-month loans underperform by ~675 bps vs 36-month | Term comparison chart | Duration risk is underpriced |
 | Debt consolidation holds >60% of capital at moderate returns | Capital allocation chart | Inefficient capital deployment |
 | F–G grades generate structurally negative returns | Grade return analysis | Risk mispricing across the credit spectrum |
+| Capital is concentrated in Grades B–C while weak risk-adjusted returns emerge in D–G | Capital Exposure analysis | Economic impact depends on both return and exposure |
 
 ---
 
